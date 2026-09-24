@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Cloud Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">DevOps<span>Hub</span></div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pipeline">CI/CD</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="tag">AWS • JENKINS • CI/CD</p>
+
+            <h1>
+                Build. Test.<br>
+                <span>Deploy Automatically.</span>
+            </h1>
+
+            <p class="description">
+                A simple DevOps application running on AWS EC2
+                and deployed automatically using Jenkins CI/CD.
+            </p>
+
+            <a href="#pipeline" class="button">View Pipeline</a>
+        </div>
+
+        <div class="terminal">
+            <div class="terminal-header">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="terminal-body">
+                <p>$ git push origin main</p>
+                <p class="green">✓ Code pushed successfully</p>
+
+                <p>$ jenkins build</p>
+                <p class="yellow">→ Running tests...</p>
+
+                <p class="green">✓ Tests passed</p>
+                <p class="yellow">→ Deploying to EC2...</p>
+
+                <p class="green">✓ Deployment successful</p>
+
+                <p>$ <span class="cursor">_</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <h2>DevOps Stack</h2>
+        <p class="section-description">
+            Technologies used in this CI/CD project
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">☁</div>
+                <h3>AWS EC2</h3>
+                <p>
+                    Cloud server used to host the application
+                    and run the Jenkins deployment environment.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⚙</div>
+                <h3>Jenkins</h3>
+                <p>
+                    Automates the build, test and deployment
+                    process whenever new code is pushed.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⌘</div>
+                <h3>Git</h3>
+                <p>
+                    Version control system used to manage
+                    application source code.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="pipeline" class="pipeline-section">
+
+        <h2>CI/CD Pipeline</h2>
+
+        <div class="pipeline">
+
+            <div class="pipeline-step">
+                <div class="number">01</div>
+                <h3>Code</h3>
+                <p>Developer pushes code to GitHub.</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="pipeline-step">
+                <div class="number">02</div>
+                <h3>Build</h3>
+                <p>Jenkins downloads the latest code.</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="pipeline-step">
+                <div class="number">03</div>
+                <h3>Test</h3>
+                <p>Automated tests verify the application.</p>
+            </div>
+
+            <div class="arrow">→</div>
+
+            <div class="pipeline-step">
+                <div class="number">04</div>
+                <h3>Deploy</h3>
+                <p>Jenkins deploys the application to EC2.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Deployment Status</h2>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            <span>Application is running successfully</span>
+        </div>
+
+        <p>
+            This page was deployed using an automated CI/CD pipeline.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 DevOps Hub | AWS + Jenkins CI/CD</p>
+    </footer>
+
+</body>
+</html>
